@@ -1,0 +1,19 @@
+package problem12;
+
+public class highlidivisibletri {
+	public static int divnumber(int i){
+		int sum = 0;
+		for(int j = 1;j<=i;j++){
+			if(i%j==0)
+				sum+=1;
+		}
+		return sum;
+	}
+	
+	public static int getOverFHdiv(){
+		int i = 1;
+		while(divnumber(i)<500){
+			i++;
+		}
+	}
+}

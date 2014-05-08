@@ -1,0 +1,24 @@
+package problem12;
+
+public class highlidivisibletri {
+	public static int divnumber(int i){
+		int sum = 0;
+		for(int j = 1;j<=i;j++){
+			if(i%j==0)
+				sum+=1;
+		}
+		return sum;
+	}
+	
+	public static int getOverdiv(int j){
+		int i = 1;
+		while(divnumber(i)<j){
+			i++;
+		}
+		return i;
+	}
+	
+	public static void main(String[] args){
+		System.out.println(getOverdiv(500));
+	}
+}

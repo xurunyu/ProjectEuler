@@ -18,7 +18,7 @@ public class LargestProductinS {
 		char[] a = s.toCharArray();
 		int point = 0;
 		Queue<Integer> q = new LinkedList<Integer>();
-		for (; point < 5; point++) {
+		for (; point < 13; point++) {
 			q.offer(Character.getNumericValue(a[point]));
 		}
 		System.out.println(q.toString());
